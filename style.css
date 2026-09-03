@@ -1,0 +1,247 @@
+/* ==========================================================
+
+   PALETA DE CORES: THE LIFE OF PABLO (KANYE WEST)
+
+   Fundo: Laranja TLOP (#F8A170)
+
+   Destaque: Laranja Vibrante (#F58B54)
+
+   Textos e Detalhes: Preto Puro (#000000)
+
+   ========================================================== */
+
+
+
+/* Fundo Geral da Página */
+
+body,
+
+.bg-dark {
+
+  background-color: #F8A170 !important;
+
+  color: #000000 !important;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+
+}
+
+
+
+/* Navbar e Footer no Estilo TLOP */
+
+.navbar,
+
+footer,
+
+.bg-black {
+
+  background-color: #F58B54 !important;
+
+  border-color: #000000 !important;
+
+}
+
+
+
+/* Links do Menu */
+
+.navbar-dark .navbar-nav .nav-link {
+
+  color: #000000 !important;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link.active,
+
+.navbar-dark .navbar-nav .nav-link:hover {
+
+  text-decoration: underline;
+
+  color: #000000 !important;
+
+}
+
+
+
+.navbar-brand {
+
+  color: #000000 !important;
+
+  font-weight: 900 !important;
+
+  letter-spacing: 2px;
+
+}
+
+
+
+/* Títulos, Textos e Destaques */
+
+h1, h2, h3, h4, h5, h6,
+
+.text-warning,
+
+.display-3,
+
+.display-4 {
+
+  color: #000000 !important;
+
+  font-weight: 900 !important;
+
+  text-transform: uppercase;
+
+}
+
+
+
+p, span, li,
+
+.text-secondary {
+
+  color: #111111 !important;
+
+}
+
+
+
+/* Cards com Estética TLOP */
+
+.card {
+
+  background-color: #F58B54 !important;
+
+  border: 2px solid #000000 !important;
+
+  color: #000000 !important;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+
+
+.card:hover {
+
+  transform: translateY(-4px);
+
+  box-shadow: 6px 6px 0px #000000 !important;
+
+}
+
+
+
+.card-footer {
+
+  background-color: #F8A170 !important;
+
+  border-top: 2px solid #000000 !important;
+
+}
+
+
+
+/* Botões */
+
+.btn-outline-warning,
+
+.btn-primary {
+
+  background-color: #000000 !important;
+
+  color: #F8A170 !important;
+
+  border: 2px solid #000000 !important;
+
+  font-weight: bold;
+
+  text-transform: uppercase;
+
+  border-radius: 0;
+
+}
+
+
+
+.btn-outline-warning:hover,
+
+.btn-primary:hover {
+
+  background-color: #F8A170 !important;
+
+  color: #000000 !important;
+
+}
+
+
+
+/* Alertas e Listas */
+
+.alert-warning {
+
+  background-color: #000000 !important;
+
+  color: #F8A170 !important;
+
+  border: none;
+
+  font-weight: bold;
+
+}
+
+
+
+.alert-warning .btn-close {
+
+  filter: invert(1);
+
+}
+
+
+
+.list-group-item {
+
+  background-color: #F58B54 !important;
+
+  border: 2px solid #000000 !important;
+
+  color: #000000 !important;
+
+}
+
+
+
+/* Badges (Etiquetas) */
+
+.badge {
+
+  border: 1px solid #000000 !important;
+
+  color: #000000 !important;
+
+  background-color: #F8A170 !important;
+
+  font-weight: bold;
+
+}
+
+
+
+/* Bordas e Divisores */
+
+.border-secondary,
+
+hr {
+
+  border-color: #000000 !important;
+
+  opacity: 1;
+
+}

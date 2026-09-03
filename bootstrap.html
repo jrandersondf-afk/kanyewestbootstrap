@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conhecendo o Bootstrap</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS Próprio Externo -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Estilos Embutidos (Garantia de Funcionamento do Tema TLOP) -->
+  <style>
+    body, .bg-dark { background-color: #F8A170 !important; color: #000000 !important; font-family: 'Helvetica Neue', Arial, sans-serif; }
+    .navbar, footer, .bg-black { background-color: #F58B54 !important; border-color: #000000 !important; }
+    .navbar-dark .navbar-nav .nav-link { color: #000000 !important; font-weight: 700; text-transform: uppercase; }
+    .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link:hover { text-decoration: underline; color: #000000 !important; }
+    .navbar-brand { color: #000000 !important; font-weight: 900 !important; letter-spacing: 2px; }
+    h1, h2, h3, h4, h5, h6, .text-warning, .display-4 { color: #000000 !important; font-weight: 900 !important; text-transform: uppercase; }
+    p, span, li, .text-secondary { color: #111111 !important; }
+    .list-group-item { background-color: #F58B54 !important; border: 2px solid #000000 !important; color: #000000 !important; }
+    .border-secondary, hr { border-color: #000000 !important; opacity: 1; }
+  </style>
+</head>
+<body class="bg-dark text-light">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top border-bottom border-secondary">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-uppercase" href="index.html">Kanye West</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">História</a></li>
+          <li class="nav-item"><a class="nav-link" href="albuns.html">Álbuns & Genialidade</a></li>
+          <li class="nav-item"><a class="nav-link active" href="bootstrap.html">Sobre o Bootstrap</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="py-5 bg-black text-center border-bottom border-dark">
+    <div class="container py-2">
+      <h1 class="display-4 fw-bold">CONHECENDO O BOOTSTRAP</h1>
+      <p class="lead fw-bold">Documentação explicativa sobre a ferramenta front-end utilizada no projeto.</p>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="container my-5">
+    
+    <!-- O que é e Para que serve -->
+    <section class="row mb-5">
+      <div class="col-12 col-md-6 mb-4 mb-md-0">
+        <div class="p-4 bg-black rounded h-100 border border-dark">
+          <h3 class="mb-3">O que é Bootstrap?</h3>
+          <p>O <strong>Bootstrap</strong> é o framework front-end em HTML, CSS e JavaScript mais popular do mundo. Ele fornece uma coleção de componentes pré-estilizados e scripts para facilitar o desenvolvimento de interfaces web modernas e responsivas.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="p-4 bg-black rounded h-100 border border-dark">
+          <h3 class="mb-3">Para que serve?</h3>
+          <p>Ele resolve o problema de ter que construir estilos CSS complexos do zero, garantindo padronização visual, agilidade no desenvolvimento, compatibilidade entre navegadores e adaptação simplificada para diferentes telas (responsividade).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sistema de Grid -->
+    <section class="row mb-5">
+      <div class="col-12">
+        <div class="p-4 bg-black rounded border border-dark">
+          <h3 class="mb-3">O Sistema de Grid</h3>
+          <p>O sistema de Grid do Bootstrap organiza a tela em até <strong>12 colunas flexíveis</strong>. Ele utiliza os seguintes conceitos base:</p>
+          <ul>
+            <li><code>container</code>: Envolve o conteúdo e define as margens e a largura máxima.</li>
+            <li><code>row</code>: Linha horizontal que engloba as colunas.</li>
+            <li><code>col</code>: Coluna básica com tamanho automático.</li>
+            <li><code>col-md-*</code>: Define a quantidade de colunas (de 1 a 12) a partir de telas médias (Tablets/Notebooks).</li>
+            <li><code>col-lg-*</code>: Formatação específica para telas grandes (Desktops).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Responsividade -->
+    <section class="row mb-5">
+      <div class="col-12">
+        <div class="p-4 bg-black rounded border border-dark">
+          <h3 class="mb-3">Responsividade na Prática</h3>
+          <p>Design responsivo garante que a página funcione perfeitamente em múltiplos dispositivos. O Bootstrap utiliza <em>breakpoints</em> de CSS media queries para adaptar o layout:</p>
+          <div class="row text-center mt-4">
+            <div class="col-6 col-md-3 mb-3">
+              <div class="p-3 bg-dark rounded border border-dark fw-bold">📱 Celulares<br><small>&lt; 576px</small></div>
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+              <div class="p-3 bg-dark rounded border border-dark fw-bold">📱 Tablets<br><small>&ge; 768px</small></div>
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+              <div class="p-3 bg-dark rounded border border-dark fw-bold">💻 Notebooks<br><small>&ge; 992px</small></div>
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+              <div class="p-3 bg-dark rounded border border-dark fw-bold">🖥️ Monitores<br><small>&ge; 1200px</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 Componentes Utilizados -->
+    <section class="row mb-5">
+      <div class="col-12">
+        <h3 class="mb-4">5 Componentes do Bootstrap Utilizados Neste Projeto</h3>
+        
+        <div class="list-group">
+          <div class="list-group-item mb-2">
+            <h5 class="mb-1">1. Navbar</h5>
+            <p class="mb-1">Menu de navegação responsivo que colapsa em um botão hambúrguer em telas menores.</p>
+          </div>
+          <div class="list-group-item mb-2">
+            <h5 class="mb-1">2. Card</h5>
+            <p class="mb-1">Container flexível utilizado para estruturar os álbuns e momentos da carreira com imagem, título e descrição.</p>
+          </div>
+          <div class="list-group-item mb-2">
+            <h5 class="mb-1">3. Buttons (Botões)</h5>
+            <p class="mb-1">Estilização de botões interativos (ex: <code>btn-outline-warning</code>) com suporte a estados e animações ao passar o mouse.</p>
+          </div>
+          <div class="list-group-item mb-2">
+            <h5 class="mb-1">4. Alert</h5>
+            <p class="mb-1">Caixa de mensagem destacada utilizada na página principal para chamar a atenção do leitor.</p>
+          </div>
+          <div class="list-group-item mb-2">
+            <h5 class="mb-1">5. Badge</h5>
+            <p class="mb-1">Pequenas etiquetas coloridas nos cards para indicar os gêneros e classificações dos álbuns.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-black py-4 border-top border-dark mt-auto">
+    <div class="container text-center text-md-start">
+      <div class="row">
+        <div class="col-12 col-md-6 mb-3 mb-md-0">
+          <h5>Projeto Kanye West</h5>
+          <p class="small mb-0">Um tributo à trajetória e genialidade musical de Kanye West.</p>
+        </div>
+        <div class="col-12 col-md-6 text-md-end">
+          <p class="mb-0">Desenvolvido por: <strong>Anderson Dias França Júnior</strong></p>
+          <p class="small mb-0">DEV 2026 | Desenvolvido com Bootstrap 5</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
