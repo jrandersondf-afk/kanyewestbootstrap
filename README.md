@@ -1,7 +1,7 @@
 # Projeto Kanye West — Trajetória e Genialidade
 
 ## 👤 Informações do Aluno
-- **Nome do Aluno:** [SEU NOME AQUI]
+- **Nome do Aluno:** [Anderson Dias França Júnior]
 - **Ano:** 2026
 - **Tema Escolhido:** Músico / Kanye West (Trajetória, Genialidade e Álbuns)
 
